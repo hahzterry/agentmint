@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AgentMint</title>
+  <desc id="desc">A mint green AI agent connected to a network</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F0F0F"/>
+      <stop offset="1" stop-color="#1A1A2E"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="160" y1="112" x2="352" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFA3"/>
+      <stop offset="1" stop-color="#00D4AA"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="236" r="168" fill="none" stroke="#00FFA3" stroke-opacity=".12" stroke-width="36"/>
+  <path d="M160 180 116 148M352 180l44-32M160 246l-52 22M352 246l52 22" stroke="#00FFA3" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#0F141B" stroke="#00FFA3" stroke-opacity=".65" stroke-width="4">
+    <circle cx="108" cy="142" r="13"/><circle cx="404" cy="142" r="13"/><circle cx="100" cy="272" r="13"/><circle cx="412" cy="272" r="13"/>
+  </g>
+  <circle cx="256" cy="204" r="76" fill="#10151D" stroke="url(#mint)" stroke-width="9"/>
+  <path d="M256 128V98" stroke="#00FFA3" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="256" cy="88" r="11" fill="#00FFA3"/>
+  <circle cx="230" cy="196" r="9" fill="#00FFA3"/><circle cx="282" cy="196" r="9" fill="#00FFA3"/>
+  <path d="M196 282c0 42 26 70 60 70s60-28 60-70" fill="none" stroke="url(#mint)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M166 404h180" stroke="#00FFA3" stroke-width="10" stroke-linecap="round"/>
+</svg>

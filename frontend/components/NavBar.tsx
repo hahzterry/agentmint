@@ -6,8 +6,9 @@ export function NavBar() {
   return (
     <nav className="border-b border-white/10 px-6 py-4">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <a href="/" className="text-xl font-bold gradient-text">
-          AgentMint
+        <a href="/" className="flex items-center gap-2 text-xl font-bold gradient-text">
+          <img src="/agentmint-icon.svg" alt="" className="h-8 w-8 rounded-lg" />
+          <span>AgentMint</span>
         </a>
         <div className="flex items-center gap-6">
           <a

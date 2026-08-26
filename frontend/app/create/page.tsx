@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { Suspense, useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
@@ -33,7 +33,7 @@ import {
 
 type Step = "describe" | "review" | "launch";
 
-export default function CreateAgentPage() {
+function CreateAgentPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { publicKey } = useWallet();
@@ -716,5 +716,20 @@ export default function CreateAgentPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function CreateAgentPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex min-h-[50vh] items-center justify-center text-gray-400">
+          <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+          Loading agent builder...
+        </div>
+      }
+    >
+      <CreateAgentPageContent />
+    </Suspense>
   );
 }
