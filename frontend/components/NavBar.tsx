@@ -8,7 +8,7 @@ export function NavBar() {
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 text-xl font-bold gradient-text">
           <img src="/agentmint-icon.svg" alt="" className="h-8 w-8 rounded-lg" />
-          <span>AgentMint</span>
+          <span>AIfy</span>
         </a>
         <div className="flex items-center gap-6">
           <a
